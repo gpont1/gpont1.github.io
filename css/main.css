@@ -10,6 +10,9 @@ body {
     font-family: "Times New Roman";
     color:  #000000;
 }
+nav {
+    text-align: center;
+}
 
 h1 {
     font-size:  3rem;
