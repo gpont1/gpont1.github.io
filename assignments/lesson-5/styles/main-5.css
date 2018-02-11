@@ -1,0 +1,103 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { margin: 10px; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  align-content: center;
+  font-size: 14px;
+  /* Declare the base font-family - from google font api or other */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 95%; 
+}
+
+header {
+    height: 125px;
+    color: #FFFFFF;
+    background-color: #164475;
+}
+
+header h1 {
+    padding-top:4px;
+    text-align:center;
+}
+
+header img {
+    float: left;
+}
+
+header .subheading {
+    text-align: center; 
+}
+
+nav ul {  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color:#f1f1f1;  
+}
+
+nav ul li{
+    text-align: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #000000;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:active
+{
+    background-color: #164475;
+    color: #ffffff;
+}
+
+nav ul li a:hover
+{
+     background-color: #555555;
+     color: #ffffff
+}
+
+main h2 {
+    padding-top: 10px;
+    text-align: center;
+    float: left;
+    margin-bottom: -15px;
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+.summary {
+    display: inline-block;
+    width: 80%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #f5f10c;
+}
+h2{
+    text-align: center;
+}
+article{
+    display: block;
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+}
+
+.forecast {
+    display: none
+}
+
+/*footer {}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
