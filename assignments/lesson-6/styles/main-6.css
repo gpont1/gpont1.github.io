@@ -1,0 +1,113 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { margin: 10px; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  align-content: center;
+  font-size: 12px;
+  /* Declare the base font-family - from google font api or other */
+  font-family: 'Oswald', sans-serif;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 95%; 
+}
+
+header {
+    height: 125px;
+    color: #FFFFFF;
+    background-color: #164475;
+}
+
+header h1 {
+    padding-top:1.75rem;
+    text-align:center;
+}
+
+header img {
+    float: left;
+    margin: 10px;
+}
+
+header .subheading {
+    text-align: center; 
+}
+
+nav ul.responsive
+{
+    display: none;
+}
+nav ul {  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color:#f1f1f1;  
+}
+
+nav ul li{
+    text-align: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #000000;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:active
+{
+    background-color: #164475;
+    color: #ffffff;
+}
+
+nav ul li a:hover
+{
+     background-color: #555555;
+     color: #ffffff
+}
+
+main h2 {
+    padding-top: 1rem;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+main figure { margin: 1rem 1rem 1rem 1rem; width:65%; }
+main figure img { width: 100%; }
+
+.summary {
+    margin-top: 1.5rem;
+    display: inline-block;
+    width: 80%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #f5f10c;
+}
+
+.current picture{
+    display:none;
+}
+.forecast {
+    display: none
+}
+
+article{
+    float: left;
+    width: 95%;
+}
+article h3{
+    text-align: center;
+}
+
+figure.testPhoto{
+    width: 65%;
+}
+figure.testPhoto img{
+    width: 100%;
+}
+
+/* Other Class Selectors */
