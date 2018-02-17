@@ -71,7 +71,7 @@ nav ul li a:hover
 }
 
 main h2 {
-    padding-top: 1rem;
+    padding-top: 1rem;;
     text-align: center;
     margin-bottom: -15px;
 }
@@ -102,12 +102,9 @@ article{
 article h3{
     text-align: center;
 }
-
-figure.testPhoto{
-    width: 65%;
-}
-figure.testPhoto img{
+footer {
     width: 100%;
+    text-align: center;
 }
 
 /* Other Class Selectors */

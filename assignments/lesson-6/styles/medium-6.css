@@ -1,6 +1,15 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     
+    header h1 {
+    padding-right: 10rem;
+    }
+
+    header .subheading {
+      padding-right: 10rem;
+    }
+
+
     nav button { display:none; } 
     /* hamburger button does not need to be shown */
     nav ul li { 
@@ -37,7 +46,7 @@
       float: left;
     }
     article{
-      width: 45%;
+      width: 95%;
       padding-left: 3rem;
     }
     figure.testImage{
@@ -47,16 +56,13 @@
     figure.testImage img {
       width: 100%
     }
-  
     footer {
-      display: inline-block;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #164475;
+      color: white;
       text-align: center;
-      bottom 0;
-        }
- 
-    article p.town-article img { width: 62.666%; float: rights; }  /* responsive images */
   }
-
-
-
-
+}
