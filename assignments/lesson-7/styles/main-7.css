@@ -63,7 +63,7 @@
   }
 
   nav ul li a {
-    display: block;
+    display: flex;
     color: #000000;
     padding: 5px 10px;
     text-decoration: none;
@@ -121,5 +121,9 @@
   max-width: 90%;
   grid-gap: 10px;
   grid-template-columns: 200px;
+}
+
+ .grid-container img:hover {
+  box-shadow: 5px 5px 10px gray;
 }
 
