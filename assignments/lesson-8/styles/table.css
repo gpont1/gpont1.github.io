@@ -2,8 +2,8 @@
     font-family: 'Ubuntu', sans-serif;
 }
 body {
-    width: 278px;
-    margin-left:40px;
+    width: 300px;
+    margin-left:50px;
 }
 thead th:nth-child(1) {
     background-color:  #7fb9c2;
