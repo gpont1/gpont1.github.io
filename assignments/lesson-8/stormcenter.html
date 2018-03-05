@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Watcher | Franklin</title>
+    <meta name="author" content="Gordon Pont">
+    <meta name="description" content="This page gives a weather forecast for 10 days as well as a weather article">
+    <!-- external style references in the proper cascading order -->    
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-8.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium-8.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-8.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="The site logo" width="140" height="115">
+        <div id="container1">
+        <h1>Weather Watcher</h1>
+        <div class="subheading">Always be Prepared for a Rainy Day</div>
+        </div>
+    </header>
+
+  <!-- site navigation use placeholder references -->
+    <nav>
+        <button class="hamburger" onclick="toggle()">&#9776;</button>
+        <ul class="menu responsive">
+            <li><a href="../../index.html">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>		
+    </nav>    
+    <main>
+        <span id="containerform">
+        <h1>Storm Center</h1>
+        <form method="post" action="thankyou.html">
+            <fieldset>
+                <legend id="personalinfo">Personal Info</legend>
+                    <label for="name">Full Name: <input  type="text" name="name" placeholder="Full Name" required  ></label><br>
+                    <label for="email">Email: <input  type="email" name="email" placeholder="yourname@gmail.com"></label><br>
+                    <label for="phone">Phone Number: <input type="tel" name="phone" placeholder="555-555-5555" required></label><br>
+                    <label for="zipcode">Zip Code: <input type="tel" name="zipcode" placeholder="84062" required></label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend id="storminfo">Storm Info</legend>
+                <label for="stormdate">Storm Date: <input type="date" name="stormdate" placeholder="mm/dd/yyyy"></label><br>
+                <label for="stormtype">Storm Type: <input name="stormtype"  list="stormtype"> </label>
+                    <datalist id="stormtype">
+                        <option value="Tornado"></option>
+                        <option value="Severe Thunderstorm"></option>
+                        <option value="Heavey Rain"></option>
+                        <option value="Flooding"></option>
+                        <option value="High Winds"></option>
+                        <option value="Heavy Snow"></option>
+                        <option value="Ice"></option>
+                    </datalist><br>
+                <label for"stormseverity">Storm Severity (1 to 10) <input name="stormseverity" type="range" id="stormseverity" min="1" max="10" step"1"></label><br>
+                <label for="region">Storm Region: <input name="region" list="regions" placeholder="SELECT REGION"></label>
+                    <datalist id="regions">
+                        <option value="Franklin"></option>
+                        <option value="Greenville"></option>
+                        <option value="Springfield"></option>
+                    </datalist><br>
+            </fieldset>
+            <fieldset>
+                <legend id="additional">Addutional Info</legend>
+                    <label for="danger">In Danger? 
+                        <input type="radio" name="danger" value="yes"> Yes
+                        <input type="radio" name="danger" value="maybe"> Maybe
+                        <input type="radio" name="danger" value="no"> No
+                    </label><br>
+                    <textarea rows="4" cols="auto">Please enter any additional information relevant to this storm you would like to let us know of.
+                    </textarea> 
+            </fieldset>
+        <input type="submit">
+      </form>
+
+    </span>
+  </main>
+
+  
+
+  <footer>
+    <aside>
+      Gordon Pont | 123-456-7890 | 123 West 100 South, Pleasant Grove, Utah
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Watchers | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+
+</body>
+</html>
