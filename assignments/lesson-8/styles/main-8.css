@@ -135,7 +135,7 @@ header {
 form {
   padding: 1rem;
   margin: .5rem;
-  width: 30%;
+  width: 40%;
 }
 
 form legend {
@@ -144,4 +144,16 @@ form legend {
   font-size: 1.5rem;
 }
 
+form {
+  display: table;
+}
+form p {
+  display: table-row;
+}
+label {
+  display: table-cell;
+}
+input {
+  display: table-cell;
+}
 
