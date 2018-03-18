@@ -4,7 +4,6 @@ $.ajax
 ({
     type: "GET",
     url: "https://api.wunderground.com/api/933628f837f8f622/conditions/q/MN/Franklin.json",
-    headers: {true}
 success: function(data){
 document.getElementById('fcurrentWeather').innerHTML = data.current_observation.weather;
 document.getElementById('fwindSpeed').innerHTML += data.current_observation.wind_mph + ' MPH';
