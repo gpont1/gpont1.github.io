@@ -3,7 +3,7 @@
 $.ajax
 ({
     type: "GET",
-    url: "http://api.wunderground.com/api/933628f837f8f622/conditions/q/MN/Franklin.json",
+    url: "https://api.wunderground.com/api/933628f837f8f622/conditions/q/MN/Franklin.json",
     headers: {true}
 success: function(data){
 document.getElementById('fcurrentWeather').innerHTML = data.current_observation.weather;
@@ -22,7 +22,7 @@ document.getElementById('fcurrentIcon').src = securedIcon;
 $.ajax
 ({
     type: "GET",
-    url: "http://api.wunderground.com/api/933628f837f8f622/forecast/q/MN/Franklin.json",
+    url: "https://api.wunderground.com/api/933628f837f8f622/forecast/q/MN/Franklin.json",
 
     success: function(data){
         document.getElementById('ftforecast').innerHTML += data.forecast.txt_forecast.forecastday[0].fcttext;
