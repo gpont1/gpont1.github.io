@@ -15,7 +15,7 @@
     <script src="scripts/jquery.js"></script>
 
   </head>
-<body onload="franklin()" onload="toggle()">
+<body onload="franklin()">
 
   <header>
     <img src="images/logo.png" alt="The site logo" width="140" height="115">
@@ -44,7 +44,7 @@
     <section class="summary">
       <h2>Weather Summary</h2> 
       <div class="currentData">
-        <img id="fcurrentIcon">
+        <img id="fcurrentIcon" src="#"  alt="currenticon">
         <h3 id="fcurrentWeather"></h3>  
         <p id="fcurrentTemp">Current Temperature: </p> 
         <p id="fwindSpeed">Wind Speed: </p> 
@@ -136,25 +136,23 @@
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/wu-weather.js"></script>
+  <script id="wayfinding">
+      var urlString = document.location.href;
+      var urlArray = urlString.split('/');
+      var pageHREF=urlArray[urlArray.length-1];
+    
+      if (pageHREF !=="") {
+        var menu = document.querySelectorAll('ul#mainmenu li a');
+        var i;
+        //loop through all the menu items in the navigation
+        for(i=0; i<menu.length; i++) {
+          var currentURL=(menu[i].getAttribute("href"));
+          menu[i].parentNode.className=""; //turn off highliting by default
+          if (currentURL===pageHREF) {
+            menu[i].parentNode.className="active";
+          } //end if
+        } //end of the search for a match
+      } //end of if !==
+    </script>
 </body>
-
-<script>
-  var urlString = document.location.href;
-  var urlArray = urlString.split('/');
-  var pageHREF=urlArray[urlArray.length-1];
-
-  if (pageHREF !=="") {
-    var menu = document.querySelectorAll('ul#mainmenu li a');
-    var i;
-    //loop through all the menu items in the navigation
-    for(i=0; i<menu.length; i++) {
-      var currentURL=(menu[i].getAttribute("href"));
-      menu[i].parentNode.className=""; //turn off highliting by default
-      if (currentURL===pageHREF) {
-        menu[i].parentNode.className="active";
-      } //end if
-    } //end of the search for a match
-  } //end of if !==
-</script>
-
 </html>

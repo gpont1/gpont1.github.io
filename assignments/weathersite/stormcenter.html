@@ -27,12 +27,12 @@
   <!-- site navigation use placeholder references -->
   <nav>
         <button class="hamburger" onclick="toggle()">&#9776;</button>
-        <ul class="menu responsive">
+        <ul id="mainmenu" class="menu responsive">
           <li><a href="index.html">Home</a></li>
           <li><a href="franklin.html">Franklin</a></li>
           <li><a href="greenville.html">Greenville</a></li>
           <li><a href="springfield.html">Springfield</a></li>
-          <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>		
     </nav>      
@@ -41,17 +41,17 @@
         <form method="post" action="thankyou.html">
             <fieldset>
                 <legend id="personalinfo">Personal Info</legend>
-                    <label for="name">Full Name: <input  type="text" name="name" placeholder="Full Name" required  ></label><br>
-                    <label for="email">Email: <input  type="email" name="email" placeholder="yourname@gmail.com"></label><br>
-                    <label for="phone">Phone Number: <input type="tel" name="phone" placeholder="555-555-5555" required></label><br>
-                    <label for="zipcode">Zip Code: <input type="tel" name="zipcode" placeholder="84062" required></label><br>
+                    <label for="name">Full Name: <input id="name" type="text" name="name" placeholder="Full Name" required  ></label><br>
+                    <label for="email">Email: <input id="email"  type="email" name="email" placeholder="yourname@gmail.com"></label><br>
+                    <label for="phone">Phone Number: <input id="phone" type="tel" name="phone" placeholder="555-555-5555" required></label><br>
+                    <label for="zipcode">Zip Code: <input id="zipcode" type="tel" name="zipcode" placeholder="84062" required></label><br>
             </fieldset>
 
             <fieldset>
                 <legend id="storminfo">Storm Info</legend>
-                <label for="stormdate">Storm Date: <input type="date" name="stormdate" placeholder="mm/dd/yyyy"></label><br>
-                <label for="stormtype">Storm Type: <input name="stormtype"  list="stormtype"> </label><br>
-                    <datalist id="stormtype">
+                <label for="stormdate">Storm Date: <input id="stormdate" type="date" name="stormdate"></label><br>
+                <label for="stormtype">Storm Type: <input id="stormtype" name="stormtype"  list="stormtype"> </label><br>
+                    <datalist id="stormtype1">
                         <option value="Tornado"></option>
                         <option value="Severe Thunderstorm"></option>
                         <option value="Heavey Rain"></option>
@@ -60,8 +60,8 @@
                         <option value="Heavy Snow"></option>
                         <option value="Ice"></option>
                     </datalist><br>
-                <label for"stormseverity">Storm Severity (1 to 10) <input name="stormseverity" type="range" id="stormseverity" min="1" max="10" step"1"></label><br>
-                <label for="region">Storm Region: <input name="region" list="regions" placeholder="SELECT REGION"></label>
+                <label for="stormseverity">Storm Severity (1 to 10) <input name="stormseverity" type="range" id="stormseverity" min="1" max="10" step="1"></label><br>
+                <label for="region">Storm Region: <input id="region" name="region" list="regions" placeholder="SELECT REGION"></label>
                     <datalist id="regions">
                         <option value="Franklin"></option>
                         <option value="Greenville"></option>
@@ -94,7 +94,24 @@
 
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
-
+  <script>
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF=urlArray[urlArray.length-1];
+      
+        if (pageHREF !=="") {
+          var menu = document.querySelectorAll('ul#mainmenu li a');
+          var i;
+          //loop through all the menu items in the navigation
+          for(i=0; i<menu.length; i++) {
+            var currentURL=(menu[i].getAttribute("href"));
+            menu[i].parentNode.className=""; //turn off highliting by default
+            if (currentURL===pageHREF) {
+              menu[i].parentNode.className="active";
+            } //end if
+          } //end of the search for a match
+        } //end of if !==
+      </script>
 
 </body>
 </html>
