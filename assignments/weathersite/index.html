@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather Watcher | Home Page</title>
+        <meta name="author" content="Gordon Pont">
+        <meta name="description" content="This page serves as the home page for my Weather site.  It's intended purpose is to share weather details">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    
+</head>
+    <body>
+        <header>
+            <img src="images/logo.png" alt="The site logo" width="110" height="110">
+            <h1>Weather Watcher</h1>
+            <div class="subheading">Always be Prepared for a Rainy Day</div>
+        </header>
+
+        <nav>
+            <button class="hamburger" onclick="toggle()">&#9776;</button>
+            <ul id="mainmenu" class="menu responsive">    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>		
+        </nav>
+
+          <main>
+            <div class="boxContainer">
+                <div class="Franklin" >
+                    <h3 id="cityname1"><a href='franklin.html'>Franklin</a></h3>
+                    <p id="franklin"></p>
+                    <h3 class="boxHeaders" >Events</h3>
+                    <p id="fevents"></p>
+                </div>
+                <div class="Greenville">
+                    <h3 id="cityname2"><a href='greenville.html'>Greenville</a></h3>
+                    <p id="greenville"></p>
+                    <h3 class="boxHeaders" >Events</h3>
+                    <p id="gevents"></p>
+                </div>
+                <div class="springfield">
+                    <h3 id="cityname3"><a href='springfield.html'>Springfield</a></h3>
+                    <p id="springfield"></p>
+                    <h3 class="boxHeaders" >Events</h3>
+                    <p id="sevents"></p>
+                </div>
+          </main>
+
+
+          <footer>
+                <aside>
+                    Gordon Pont <br> 123-456-7890 <br> 123 West 100 South, Pleasant Grove, Utah
+                </aside>
+                <p>-----------------------------</p>
+                <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Watchers | <span id="currentdate"></span></p>
+            </footer>
+
+            <script src="scripts/index.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/wu-weather.js"></script>
+        </body>
+        <script>
+                var urlString = document.location.href;
+                var urlArray = urlString.split('/');
+                var pageHREF=urlArray[urlArray.length-1];
+              
+                if (pageHREF !=="") {
+                  var menu = document.querySelectorAll('ul#mainmenu li a');
+                  var i;
+                  //loop through all the menu items in the navigation
+                  for(i=0; i<menu.length; i++) {
+                    var currentURL=(menu[i].getAttribute("href"));
+                    menu[i].parentNode.className=""; //turn off highliting by default
+                    if (currentURL===pageHREF) {
+                      menu[i].parentNode.className="active";
+                    } //end if
+                  } //end of the search for a match
+                } //end of if !==
+              </script>
+</html>

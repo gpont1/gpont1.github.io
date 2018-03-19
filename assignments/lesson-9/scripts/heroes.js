@@ -11,7 +11,7 @@ request.onload = function() {
     var superHeroes = (request.response);
     populateHeader(superHeroes);
     showHeroes(superHeroes);
-  }
+  } 
   
   function populateHeader(jsonObj) {
     var myH1 = document.createElement('h1');

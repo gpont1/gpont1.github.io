@@ -1,0 +1,76 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+    header h1 {
+    padding-right: 10rem;
+    }
+
+    header .subheading {
+      padding-right: 10rem;
+    }
+
+    nav ul{
+     display: flex !important;
+    }
+    nav button { display:none; } 
+    /* hamburger button does not need to be shown */
+    nav ul li { 
+      display: inline-block;
+      padding: 0px;
+  }
+  keepmenu {
+    display: inline-block;
+  }
+ 
+  .summary{
+    vertical-align: top;
+    width:40%;
+    margin-left: 3rem;
+
+  }
+
+  tr th {
+    padding: 10px;
+    border: 1px solid black;
+  }
+  tr td {
+    padding-left: 10px;
+    border: 1px solid black;
+    
+  }
+    section.forecast { 
+      display: inline-block;
+      width: 40%;
+      padding-top: 2rem;
+      padding-left: 2rem;
+      vertical-align: top;
+    }  /* show the 10-day forecast with the medium view and up */
+
+    .current picture{
+      display: inline-flex;
+      float: left;
+    }
+    article{
+      width: 95%;
+      padding-left: 3rem;
+    }
+    figure.testImage{
+      float: right;
+      width: 45%;
+    }
+    figure.testImage img {
+      width: 100%
+    }
+
+  #fimage {
+    float: right; 
+    margin: 1rem;
+}
+/*GALLERY MEDIUM*/
+.grid-container {
+  grid-template-columns: auto auto;
+  }
+
+}
+
+

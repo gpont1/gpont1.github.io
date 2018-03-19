@@ -1,0 +1,160 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Watcher | Greenville</title>
+    <meta name="author" content="Gordon Pont">
+    <meta name="description" content="This page gives a weather forecast for 10 days as well as a weather article">
+    <!-- external style references in the proper cascading order -->    
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    <script src="scripts/jquery.js"></script>
+
+  </head>
+<body onload="greenville()">
+
+  <header>
+    <img src="images/logo.png" alt="The site logo" width="140" height="115">
+    <div id="container1">
+    <h1>Weather Watcher</h1>
+    <div class="subheading">Always be Prepared for a Rainy Day</div>
+    </div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+      <button class="hamburger" onclick="toggle()">&#9776;</button>
+      <ul id="mainmenu" class="menu responsive">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>		
+  </nav>
+
+  <h1 class="cityname">The City of Greenville</h1>
+
+  <main class="container2">
+    <section class="summary">
+      <h2>Weather Summary</h2> 
+      <div class="currentData">
+        <img id="gcurrentIcon">
+        <h3 id="gcurrentWeather"></h3>  
+        <p id="gcurrentTemp">Current Temperature: </p> 
+        <p id="gwindSpeed">Wind Speed: </p> 
+        <p id="gwindChill">Wind Chill: </p> 
+              
+      </div>   
+      
+      <div id="tomorrowForecast">
+        <h3>Tomorrow's Forecast: </h3>
+        <p id="gtforecast"></p>
+      </div>
+                
+    </section>
+
+    
+    <div id="fimage">
+        <img src="images/snowy.jpeg"  alt="Snowy">
+      </div>
+
+      <section class="forecast">
+          <h3>10 Day Forecast</h3>
+          <table>
+          <thead>
+              <tr>
+                <th>Day</th>
+                <th>Day 1</th>
+                <th>Day 2</th>
+                <th>Day 3</th>
+                <th>Day 4</th>
+                <th>Day 5</th>
+                <th>Day 6</th>
+                <th>Day 7</th>
+                <th>Day 8</th>
+                <th>Day 9</th>
+                <th>Day 10</th>
+              </tr>
+        </thead>
+            <tbody>  
+              <tr>
+                <td>High</td>
+                <td id="hday1"></td>
+                <td id="hday2"></td>
+                <td id="hday3"></td>
+                <td id="hday4"></td>
+                <td>39&deg;F</td>
+                <td>45&deg;F</td>
+                <td>52&deg;F</td>
+                <td>54&deg;F</td>
+                <td>39&deg;F</td>
+                <td>45&deg;F</td>
+              </tr>
+        </tbody>
+        
+        <tbody>  
+            <tr>
+              <td>Low</td>
+              <td id="lday1"></td>
+              <td id="lday2"></td>
+              <td id="lday3"></td>
+              <td id="lday4"></td>
+              <td>17&deg;F</td>
+              <td>19&deg;F</td>
+              <td>32&deg;F</td>
+              <td>40&deg;F</td>
+              <td>17&deg;F</td>
+              <td>19&deg;F</td>
+            </tr>
+      </tbody>
+          </table>
+        </section>
+      
+    <article>
+      <h3>Snow is Coming</h3>	
+      <p class="town-article">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate nunc fermentum, fringilla orci sed, pulvinar tortor. Curabitur euismod vel nunc dictum tristique. Maecenas neque est, hendrerit a nunc quis, sodales pharetra neque. Curabitur id ornare eros, vel pellentesque tortor. Donec ac velit semper, facilisis nisi eget, vulputate arcu. Nunc dapibus bibendum feugiat. Nunc congue egestas nulla vitae auctor. Maecenas eget aliquet nisl. Duis in leo leo. Mauris egestas massa ex, nec lobortis mi porta a. Duis auctor ante quis sem pretium pulvinar. Curabitur gravida accumsan eros, ut auctor lorem pretium et. Aenean porttitor lacus non laoreet pretium. Vestibulum egestas aliquam ornare. Ut ac mauris venenatis, pharetra eros vel, cursus ligula.
+
+        Sed sit amet turpis et est facilisis posuere. Vestibulum nec aliquam augue, sit amet imperdiet augue. In hac habitasse platea dictumst. Maecenas id accumsan tellus. Sed congue magna risus, vel pulvinar magna imperdiet a. Maecenas mollis tincidunt lectus sed pretium. Etiam eu viverra libero. Etiam maximus faucibus interdum. Duis vitae dignissim orci. Proin imperdiet a nulla a pellentesque. Maecenas a justo a tellus eleifend.
+      </p>
+    </article>		 
+  </main>
+
+  <footer>
+      <aside>
+          Gordon Pont <br> 123-456-7890 <br> 123 West 100 South, Pleasant Grove, Utah
+      </aside>
+      <p>-----------------------------</p>
+      <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Watchers | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/wu-weather.js"></script>
+</body>
+<script>
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF=urlArray[urlArray.length-1];
+  
+    if (pageHREF !=="") {
+      var menu = document.querySelectorAll('ul#mainmenu li a');
+      var i;
+      //loop through all the menu items in the navigation
+      for(i=0; i<menu.length; i++) {
+        var currentURL=(menu[i].getAttribute("href"));
+        menu[i].parentNode.className=""; //turn off highliting by default
+        if (currentURL===pageHREF) {
+          menu[i].parentNode.className="active";
+        } //end if
+      } //end of the search for a match
+    } //end of if !==
+  </script>
+</html>
