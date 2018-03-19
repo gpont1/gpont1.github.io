@@ -34,7 +34,6 @@ $.ajax({
     url: "https://api.wunderground.com/api/933628f837f8f622/forecast/q/MN/Franklin.json",
 
     success: function(data){
-        console.log(data)
         //highs
         document.getElementById('hday1').innerHTML = data.forecast.simpleforecast.forecastday[0].high.fahrenheit + "&deg;F";
         document.getElementById('hday2').innerHTML = data.forecast.simpleforecast.forecastday[1].high.fahrenheit + "&deg;F";
@@ -57,7 +56,6 @@ $.ajax
     url: "https://api.wunderground.com/api/933628f837f8f622/conditions/q/UT/Greenville.json",
 
 success: function(data){
-    console.log(data)
 document.getElementById('gcurrentWeather').innerHTML = data.current_observation.weather;
 document.getElementById('gwindSpeed').innerHTML += data.current_observation.wind_mph + ' MPH';
 document.getElementById('gcurrentTemp').innerHTML += data.current_observation.temp_f + '&deg;';
@@ -87,7 +85,6 @@ $.ajax({
     url: "https://api.wunderground.com/api/933628f837f8f622/forecast/q/UT/Greenville.json",
 
     success: function(data){
-        console.log(data)
         //highs
         document.getElementById('hday1').innerHTML = data.forecast.simpleforecast.forecastday[0].high.fahrenheit + "&deg;F";
         document.getElementById('hday2').innerHTML = data.forecast.simpleforecast.forecastday[1].high.fahrenheit + "&deg;F";
@@ -110,7 +107,6 @@ $.ajax
     url: "https://api.wunderground.com/api/933628f837f8f622/conditions/q/MN/Springfield .json",
 
 success: function(data){
-    console.log(data)
 document.getElementById('scurrentWeather').innerHTML = data.current_observation.weather;
 document.getElementById('swindSpeed').innerHTML += data.current_observation.wind_mph + ' MPH';
 document.getElementById('scurrentTemp').innerHTML += data.current_observation.temp_f + '&deg;';
@@ -140,7 +136,6 @@ $.ajax({
     url: "https://api.wunderground.com/api/933628f837f8f622/forecast/q/MN/Springfield.json",
 
     success: function(data){
-        console.log(data)
         //highs
         document.getElementById('hday1').innerHTML = data.forecast.simpleforecast.forecastday[0].high.fahrenheit + "&deg;F";
         document.getElementById('hday2').innerHTML = data.forecast.simpleforecast.forecastday[1].high.fahrenheit + "&deg;F";
