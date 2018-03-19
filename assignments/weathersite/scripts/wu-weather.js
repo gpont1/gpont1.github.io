@@ -31,7 +31,7 @@ $.ajax
 
 $.ajax({
     type: "GET",
-    url: "http://api.wunderground.com/api/933628f837f8f622/forecast/q/MN/Franklin.json",
+    url: "https://api.wunderground.com/api/933628f837f8f622/forecast/q/MN/Franklin.json",
 
     success: function(data){
         console.log(data)
@@ -84,7 +84,7 @@ $.ajax
 
 $.ajax({
     type: "GET",
-    url: "http://api.wunderground.com/api/933628f837f8f622/forecast/q/UT/Greenville.json",
+    url: "https://api.wunderground.com/api/933628f837f8f622/forecast/q/UT/Greenville.json",
 
     success: function(data){
         console.log(data)
@@ -137,7 +137,7 @@ $.ajax
 //get available forecast
 $.ajax({
     type: "GET",
-    url: "http://api.wunderground.com/api/933628f837f8f622/forecast/q/MN/Springfield.json",
+    url: "https://api.wunderground.com/api/933628f837f8f622/forecast/q/MN/Springfield.json",
 
     success: function(data){
         console.log(data)
