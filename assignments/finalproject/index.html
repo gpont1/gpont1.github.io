@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <title>The Mountain Spoke | Home</title>
+    
+    <!--Linking CSS -->
+    <link href="styles/normalize.css" rel="stylesheet"> 
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo-150.png" alt="Site Logo"> 
+        <h1>The Mountain Spoke</h1>
+    </header>
+    <nav>
+        <button class="hamburger" onclick="toggle()">&#9776;</button>
+            <ul id="mainmenu" class="menu responsive">    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Adventure Tours</a></li>
+                <li><a href="events.html">Cycle the Continential Divde</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="services.html">Service &amp; Repairs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>	
+    </nav>
+    <main>
+        <section>
+            <h1>Welcome to The Mountain Spoke!</h1>
+            <p>
+                Mountain biking has always been our favorite past time, and we want to share that with you! Come enjoy the amazing outdoors on one of our 
+                guided tours or come celebrate with us at our annual event, Cycle the Continential Divide! Whether you're an experienced biker, or a new beginner,
+                we have the best guides and equipment to help you have a great outdoor experience.
+            </p>
+
+                <h2>What We Offer</h1>
+                <div id="servicecontainer">
+                        <figure>
+                            <a href="tours.html">
+                                <img src="images/homepagebiking.jpg" alt="tours" height="225" width="300">
+                                <figcaption>Guided Adventure Tours</figcaption>
+                            </a>
+                         </figure>
+                        <figure>
+                            <a href="events.html">
+                                <img src="images/events.jpg" alt="annualevent" height="225" width="300">
+                                <figcaption>Cycle The Continential Divide</figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="store.html">
+                                <img src="images/bikeshop.jpg" alt="store" height="225" width="300">
+                                <figcaption>Store</figcaption>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="services.html">
+                                <img src="images/repairs.JPG" alt="service" height="225" width="300">
+                                <figcaption>Service &amp; Repairs</figcaption>
+                            </a>
+                        </figure>
+                </div>
+
+            </section>
+
+    </main>
+    <footer>
+        <aside>
+            Gordon Pont <br> 123-456-7890 <br> 123 West Mountain Lane <br>Bozeman, Montana
+        </aside>
+        <p>-----------------------------</p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/active.js"></script>
+</body>
+
+
+</html>
