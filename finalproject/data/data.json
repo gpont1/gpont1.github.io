@@ -1,0 +1,16 @@
+{
+  "bikes":[
+    {
+      "name": "Trek Full Stache 8",
+      "Price": "$3,699.99"
+    },
+    {
+      "name": "Colnago Prestige",
+      "Price": "$3,599.95"
+    },
+    {
+      "name": "Cannondale F-SI CARBON 1",
+      "Price": "$5,999.99"
+    }
+  ]
+}

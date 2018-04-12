@@ -1,0 +1,122 @@
+/*header*/
+    header {
+        padding: 30px;
+        color: white;
+        background-color: #455130;
+        text-align: center;
+        height: 85px;
+    }
+    header img {
+        display: none;
+    }
+/*body fonts*/
+    main {
+        margin: 12px;
+        font-family: 'Slabo 27px', serif;
+    }
+/*nav*/
+
+    #mainmenu{
+        background-color: #818e5b;
+        font-weight: bold;
+    } 
+    nav ul {  
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color:#f1f1f1;  
+    }
+    nav ul.responsive
+    {
+        display: none;
+    }
+    nav ul li a {
+        font-size: 20px;
+        padding: 10px;
+        color: #f1f1f1;
+    }
+    nav ul li {
+        font-size: 1rem;
+    }
+/*Home page images*/
+    #servicecontainer {
+        display: grid;
+    } 
+    figure a {
+        text-align: center;
+    }
+    h2, h1, section p {   
+        text-align: center;
+    }
+/*footer*/
+    footer {
+        color: white;
+        margin-top: 100px;
+        padding-top: 10px;
+        text-align: center;
+        background-color: #455130;  
+    }
+
+/*tours specific*/
+.tours {
+    padding: 20px;
+    border-color: #d3d3d3;
+    border-style: solid;
+    border-width: 1rem;
+}
+
+/*Store Page*/
+dd {
+    padding: 20px;
+    border-color: #d3d3d3;
+    border-style: solid;
+    border-width: 1rem;
+}
+.bikes {
+    display: none;
+}
+main dt {
+    display: inherit;
+    background: #818e5b;
+    border-radius: 20PX;
+    box-shadow: 6px 5px 24px #666666;
+    color: #f1f1f1;
+    font-size: 30px;
+    padding: 19px;
+    margin-bottom: 10px;
+}
+main dt:hover {
+    background: #455130;
+}
+#specs li {
+    text-align: left;
+}
+
+.show {
+    display: inline-block;  
+}
+/*Services*/
+table, tr, th, td {
+    border: 1px solid black;
+}
+th {
+    padding: 10px;
+    height: 50px;
+    background-color: #666666;
+    color: #f1f1f1;
+}
+#registrationform, #contactus {
+    font-size: 20px;
+    font-weight: bold;
+}
+fieldset label {
+    margin-bottom: 500px;
+}
+#video {
+    color: #f1f1f1;
+}
+.active {
+    background-color: #455130;
+}

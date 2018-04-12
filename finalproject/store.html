@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>#</title>
+    
+    <!--Linking CSS -->
+    <link href="styles/normalize.css" rel="stylesheet"> 
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <script src="scripts\jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="data/data.json"></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo-150.png" alt="Site Logo"> 
+        <h1>The Mountain Spoke</h1>
+    </header>
+    <nav>
+        <button class="hamburger" onclick="toggle()">&#9776;</button>
+            <ul id="mainmenu" class="menu responsive">    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Adventure Tours</a></li>
+                <li><a href="events.html">Cycle the Continential Divde</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="services.html">Service &amp; Repairs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>	
+    </nav>
+
+    <main>
+        <dl class="selection">
+            <button onclick="show1()" type="button"> 
+            <dt>
+                Trek
+            </dt>
+            <div class="bikes" id="bike1">
+                <dd>
+                    <img src="images/trek.jpg" alt="trek">
+                    <section>
+                        <h3>Trek Full Stache 8</h3>
+                        <ul id="specs">
+                            <li>Frame: Platinum Aluminum </li>
+                            <li>Front Suspension: RockShox Pike RL, Solo Air, Charger damper, E2 tapered steerer, Boost110, G2 Geometry w/51mm offset, 130mm travel</li>
+                            <li>Rear Suspension: Fox Performance Float EVOL, RE:aktiv 3-position damper, tuned by Trek Suspension Lab, 210x52.5mm</li>
+                            <li>Gears: SRAM GX Eagle, 12 speed</li>
+                            <li>Price: $3,699.99</div></li>
+                        </ul>
+                    </section>
+                </dd>
+            </div>
+            </button><br>
+
+            <button onclick="show2()" type="button"> 
+                <dt>
+                    Colnago
+                </dt>
+                <div class="bikes" id="bike2">
+                    <dd>
+                        <img src="images/colnago-scale.jpg" alt="colnago">
+                        <section>
+                            <h3>Colnago Prestige</h3>
+                            <ul id="specs">
+                                <li>Frame: Carbon Fiber </li>
+                                <li>Front Suspension: Shimano Ultegra</li>
+                                <li>Rear Suspension: Shimano Ultegra</li>
+                                <li>Gears: Shimano ST-R685 Hydraulic, 11 speed</li>
+                                <li>Price: $3,599.95</div></li>
+                            </ul>
+                        </section>
+                    </dd>
+                </div>
+
+            
+                </button><br>
+                <button onclick="show3()" type="button">
+                    <dt>Cannondale</dt>
+                    <div id="bike3" class="bikes">  
+                        <dd>
+                            <img src="images/cannondale.jpg" alt="cannondale">
+                            <section>
+                                    <h3>F-SI CARBON 1</h3>
+                                    <ul id="specs">
+                                        <li>Frame: Carbon Fiber </li>
+                                        <li>Front Suspension: Lefty 2.0 Carbon XLR, 2Spring, 100mm Travel</li>
+                                        <li>Rear Suspension: Lefty 2.0 Carbon XLR, 2Spring, 100mm Travel</li>
+                                        <li>Gears: SRAM X01 Eagle, 12 speed</li>
+                                        <li>Price: $5,999.99</div></li>
+                                    </ul>
+                                </section>  
+                        </dd>
+                    </div>
+
+                </button>
+                </dl>
+    </main>
+
+    <footer>
+        <aside>
+                Gordon Pont <br> 123-456-7890 <br> 3950 Valley Commons Drive, Bozeman Montana
+            </aside>
+        <p>-----------------------------</p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> | <a id="video" href="video.html">Overview Video</a> </p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/store.js"></script>
+    <script src="scripts/active.js"></script>
+</body>
+
+
+</html>

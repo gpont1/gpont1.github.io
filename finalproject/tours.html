@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This page is an overview of the tours that The Mountain Spokes offers in the Bozeman area">
+    <title>The Mountain Spoke | Guided Tours Overview</title>
+    
+    <!--Linking CSS -->
+    <link href="styles/normalize.css" rel="stylesheet"> 
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo-150.png" alt="Site Logo"> 
+        <h1>The Mountain Spoke</h1>
+    </header>
+    <nav>
+        <button class="hamburger" onclick="toggle()">&#9776;</button>
+            <ul id="mainmenu" class="menu responsive">    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Adventure Tours</a></li>
+                <li><a href="events.html">Cycle the Continential Divde</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="services.html">Service &amp; Repairs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>	
+    </nav>
+
+    <main>
+        <article>
+            <section class="tours">
+                <h2>Guided tours</h2>
+                <p>
+                    The guides on our guided tours are the most experienced guides in the area.  They are all certified in First Aid and 
+                    are extremely familiar with the area. Whether you are a beginner or an expert, our guides will do what's best for you.
+                </p>
+            </section>
+
+            <section class="tours">
+                <h2>Saddle Peak Trail</h2>
+                <p>
+                    Skill Level: Beginner <br>
+                    Length: 1/2 Day<br>
+                    Distance: 7.5 Miles <br>
+                    Cost: $75/Person <br>
+                    Location <br>
+                </p>
+                <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107756.20664471814!2d-110.99485571411138!3d45.749640724827444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53456abfa15e2ac5%3A0x3aefc4b8ef5ed861!2sSaddle+Peak!5e1!3m2!1sen!2sus!4v1523413772409" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="tours">
+                <h2>Baldy Mountain Trail</h2>
+                <p>
+                        Skill Level: Intermediate <br>
+                        Length: Full Day<br>
+                        DIstance: 12.6 Miles <br>
+                        Cost: <div id2="cost"></div>
+                        Cost: $150/Person <br>
+                        Location <br>
+                </p>  
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107756.20664471814!2d-110.99485571411138!3d45.749640724827444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534541d580afd64f%3A0xf4e92041ea3d13ce!2sBaldy+Mountain!5e1!3m2!1sen!2sus!4v1523413462991" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div> 
+            </section>
+            <section class="tours">
+                <h2>Canyon Mountain  Trail</h2>
+                <p>
+                    Skill Level: Expert <br>
+                    Length: 2 Days <br>
+                    Distance: 50.2 Miles <br>
+                    Cost: $300/Person <br>
+                    Location <br>
+                </p>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108265.69849514391!2d-110.7489392455661!3d45.570508955205455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534563c0fb34c3c1%3A0x19df7c12eb87b3cb!2sCanyon+Mountain!5e1!3m2!1sen!2sus!4v1523413148413" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <aside>
+                Gordon Pont <br> 123-456-7890 <br> 3950 Valley Commons Drive, Bozeman Montana
+            </aside>
+        <p>-----------------------------</p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> | <a id="video" href="video.html">Overview Video</a> </p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/active.js"></script>
+</body>
+
+
+</html>

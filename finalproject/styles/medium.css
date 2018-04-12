@@ -1,0 +1,57 @@
+@media only screen and (min-width: 37.5em) {
+    body {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+    /*Space Logo and Title*/
+        header {
+            display: flex;
+        }
+        /*Bring Back Image*/
+        header img {
+            display: flex;
+            vertical-align: middle;
+        }
+        header h1 {
+            flex: 1;
+        }
+    /*Hide Hamburger Button in Larger Views*/
+    nav button {
+        display: none;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+/*Turn menu into a Horizontal List*/
+    #mainmenu {
+        display: inline-block;
+    }
+    nav ul li {
+        display: inherit;
+        padding: 10px;
+    }
+
+/*Format images on home page*/
+    #servicecontainer {
+        max-width: 85%;
+        align-items: center ;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }   
+
+/*Tours Page*/
+    .map {
+        height: 300px;
+    }
+}
+/*events page*/
+#container {
+    display: flex;
+}
+#image {
+    flex: 1;
+}
+#details {
+    flex: 1;
+}
+

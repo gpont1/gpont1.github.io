@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>#</title>
+    
+    <!--Linking CSS -->
+    <link href="styles/normalize.css" rel="stylesheet"> 
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheBet">
+</head>
+<body>
+    <header>
+        <img src="images/logo-150.png" alt="Site Logo"> 
+        <h1>The Mountain Spoke</h1>
+    </header>
+    <nav>
+            <button class="hamburger" onclick="toggle()">&#9776;</button>
+                <ul id="mainmenu" class="menu responsive">    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Adventure Tours</a></li>
+                    <li><a href="events.html">Cycle the Continential Divde</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="services.html">Service &amp; Repairs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>	
+    </nav>
+    <main>
+        <section>
+            <h1>Cycle the Continential Divide!</h1>
+            <h2>2nd Annual Event</h2>
+            <section id="details">
+                <h3>Our Annual Event has been a place where folks come from all around the world to enjoy a 123 Mile bike ride together throughout Southern Montana.</h3>
+                <h4>Details: </h4>
+                <ul>
+                    <li>Dates: June 1, 2018 - June 6, 2018</li>
+                    <li>Cost: $699 for all days or $125/day</li>
+                    <h4>Requirements</h4>
+                        <li>Must be over 18 Years Old</li>
+                        <li>Must Register Before May 1, 2018</li>
+                        <li>Must Sign Waiver Prior to Event Start</li>
+                </ul>
+            </section>
+            <form method="POST" action="thankyou.html">
+                <legend id="registrationform">Registration</legend>
+                <fieldset>
+                    <label for="name">Full Name: <input id="name" type="text" name="name" placeholder="Full Name" required></label> <br>
+                    <label for="email">Email: <input id="email"  type="email" name="email" placeholder="yourname@gmail.com" required></label><br>
+                    <label for="phone">Phone Number: <input id="phone" type="tel" name="phone" placeholder="555-555-5555" required></label><br>
+                    <label for="dob">Date of Birth:  <input id="dob" type="date" name="dob" required></label><br>
+                    <label for="location">Home Town: <input id="location" type="text" name="location" placeholder="State/Country" required></label><br>
+                    <textarea rows="6" cols="auto">Please list any special accommodations or comments you have</textarea> 
+                </fieldset>
+                <input type="submit">
+            </form>    
+        </section>
+    </main>
+    <footer>
+        <aside>
+                Gordon Pont <br> 123-456-7890 <br> 3950 Valley Commons Drive, Bozeman Montana
+            </aside>
+        <p>-----------------------------</p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> | <a id="video" href="video.html">Overview Video</a> </p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/active.js"></script>
+</body>
+
+
+</html>
