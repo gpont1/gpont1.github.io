@@ -44,7 +44,7 @@
     #servicecontainer {
         display: grid;
     } 
-    figure a {
+    .figcaption {
         text-align: center;
     }
     h2, h1, section p {   
