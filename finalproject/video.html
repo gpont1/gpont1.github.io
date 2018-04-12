@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is my video overview of my website.">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <title>The Mountain Spoke | overview</title>
+    
+    <!--Linking CSS -->
+    <link href="styles/normalize.css" rel="stylesheet"> 
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo-150.png" alt="Site Logo"> 
+        <h1>The Mountain Spoke</h1>
+    </header>
+    <nav>
+        <button class="hamburger" onclick="toggle()">&#9776;</button>
+            <ul id="mainmenu" class="menu responsive">    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Adventure Tours</a></li>
+                <li><a href="events.html">Cycle the Continential Divde</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="services.html">Service &amp; Repairs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>	
+    </nav>
+    <main>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qicKJBGrfeA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </main>
+
+    <footer>
+        <aside>
+            Gordon Pont <br> 123-456-7890 <br> 123 West Mountain Lane <br>Bozeman, Montana
+        </aside>
+        <p>-----------------------------</p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/active.js"></script>
+</body>
+
+
+</html>
